@@ -9,13 +9,13 @@
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url={{ .Permalink }}{{ if .Params.pinterestmedia }}&amp;media={{ .Params.pinterestmedia | relURL }}{{ end }}&amp;description={{ .Title | safeHTML}}"
-      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
-      <span class="hidden">Pinterest</span>
-  </a>
   <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url={{ .Permalink }}"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
+  <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-normal" data-hatena-bookmark-lang="en" title="add to your hatena bookmark">
+      <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="add to your hatena bookmark" width="20" height="20" style="border: none;" />
+  </a>
+  <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 </section>
 {{end}}
