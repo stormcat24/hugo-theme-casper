@@ -46,6 +46,9 @@
          {{ range .Params.tags }}
           <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}/">#{{ . }}</a></span>
          {{ end }}
+          <a href="https://b.hatena.ne.jp/entry/{{.Permalink}}" target="_blank">
+            <img src="https://b.hatena.ne.jp/entry/image/{{.Permalink}}">
+          </a>
         </section>
     </header>
 
